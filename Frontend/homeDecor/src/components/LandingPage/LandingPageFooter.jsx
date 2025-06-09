@@ -32,7 +32,7 @@ const LandingPageFooter = () => {
         </div>
       </div>
       <div className="mb-2">
-        <p className="text-center text-xl">Developed by Hemanth Code Hub</p>
+        <p className="text-center text-xl">Developed by M V Hemanth</p>
       </div>
     </>
   );
