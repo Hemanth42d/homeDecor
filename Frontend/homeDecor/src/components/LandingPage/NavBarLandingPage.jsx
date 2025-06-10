@@ -1,4 +1,5 @@
 import "../../App.css";
+import { Link } from "react-router";
 
 const NavBarLandingPage = () => {
   return (
@@ -10,9 +11,9 @@ const NavBarLandingPage = () => {
           </a>
         </li>
         <li className="list-none pr-20">
-          <a href="#" className="text-2xl bg-amber-300 p-3 rounded-md">
+          <Link to="/register" className="text-2xl bg-amber-300 p-3 rounded-md">
             <i className="fa-solid fa-user"></i>
-          </a>
+          </Link>
         </li>
       </div>
       <div className="absolute top-[50%] left-[36%]  w-[24%] text-center animate-slide-in-right flex flex-col justify-center items-center ">
