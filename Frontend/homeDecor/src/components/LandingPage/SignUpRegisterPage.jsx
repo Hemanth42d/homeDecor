@@ -34,24 +34,29 @@ const SignUpRegisterPage = () => {
                 <div className="w-full">
                   <h1 className="text-2xl text-start p-1 pl-8 pt-3">Login</h1>
                 </div>
-                <input
-                  type="email"
-                  placeholder="Enter Email Adress"
-                  className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
-                />
-                <input
-                  type="password"
-                  placeholder="Enter Password"
-                  className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
-                />
-                <div className="w-[80%] text-end pr-2">
-                  <a href="#" className="text-blue-500 text-[17px]">
-                    Forget Password?
-                  </a>
-                </div>
-                <button className="w-[80%] bg-[#007CBE] text-white text-xl p-2 rounded-md cursor-pointer">
-                  Login In
-                </button>
+                <form
+                  className="flex flex-col gap-3 justify-center items-center w-full
+                "
+                >
+                  <input
+                    type="email"
+                    placeholder="Enter Email Adress"
+                    className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
+                  />
+                  <div className="w-[80%] text-end pr-2">
+                    <a href="#" className="text-blue-500 text-[17px]">
+                      Forget Password?
+                    </a>
+                  </div>
+                  <button className="w-[80%] bg-[#007CBE] text-white text-xl p-2 rounded-md cursor-pointer">
+                    Login In
+                  </button>
+                </form>
                 <div className="w-[80%] text-center">
                   <p>
                     Not a member ?{" "}
@@ -70,26 +75,31 @@ const SignUpRegisterPage = () => {
             <>
               <div className="border-1 border-black h-[80%] w-[80%] m-auto rounded-md flex flex-col gap-5 justify-start items-center">
                 <div className="w-full">
-                  <h1 className="text-2xl text-start p-1 pl-8 pt-3">Login</h1>
+                  <h1 className="text-2xl text-start p-1 pl-8 pt-3">Sign UP</h1>
                 </div>
-                <input
-                  type="email"
-                  placeholder="Enter Email Adress"
-                  className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
-                />
-                <input
-                  type="password"
-                  placeholder="Enter Password"
-                  className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
-                />
-                <input
-                  type="password"
-                  placeholder="Confirm Password"
-                  className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
-                />
-                <button className="w-[80%] bg-[#007CBE] text-white text-xl p-2 rounded-md cursor-pointer">
-                  SignUp
-                </button>
+                <form
+                  action=""
+                  className="flex flex-col gap-3 justify-center items-center w-full"
+                >
+                  <input
+                    type="email"
+                    placeholder="Enter Email Adress"
+                    className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    className="border-1 w-[80%] p-1 pl-3 rounded-md text-[17px] outline-none"
+                  />
+                  <button className="w-[80%] bg-[#007CBE] text-white text-xl p-2 rounded-md cursor-pointer">
+                    SignUp
+                  </button>
+                </form>
                 <div className="w-[80%] text-center">
                   <p>
                     Already have an ?{" "}
