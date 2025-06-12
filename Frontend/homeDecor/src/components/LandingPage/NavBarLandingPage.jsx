@@ -16,8 +16,8 @@ const NavBarLandingPage = () => {
           </Link>
         </li>
       </div>
-      <div className="absolute top-[50%] left-[36%]  w-[24%] text-center animate-slide-in-right flex flex-col justify-center items-center ">
-        <p className="text-4xl font-bold leading-[3rem]">
+      <div className="absolute top-[50%] left-[38%]  w-[22%] text-center animate-slide-in-right flex flex-col justify-center items-center ">
+        <p className="text-3xl font-semibold leading-[3rem]">
           A Place where you can find all your Home Decorations
         </p>
         <Link

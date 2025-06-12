@@ -8,7 +8,7 @@ const LandingPageOddCard = ({ image, title, description }) => {
         <img src={image} alt="img" className="rounded-3xl h-[90%]" />
       </div>
       <div className="w-4/6 h-[100%] flex flex-col px-30 py-8 relative">
-        <p className="text-5xl font-bold">{title}</p>
+        <p className="text-4xl font-semibold">{title}</p>
         <p className="text-xl px-20 mt-6 mb-6">{description}</p>
         <span className="absolute bottom-0 right-1/2">
           <Button />

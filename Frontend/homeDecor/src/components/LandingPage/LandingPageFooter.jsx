@@ -4,8 +4,11 @@ const LandingPageFooter = () => {
       <div className="mb-3">
         <div className="flex justify-between bg-[#F2E8BB] mt-10 px-25 pt-10 h-[35vh] ">
           <div className=" w-1/2">
-            <div className="px-60">
-              <a href="#" className="text-3xl font-bold text-decoration-none">
+            <div className="px-50">
+              <a
+                href="#"
+                className="text-3xl font-semibold text-decoration-none"
+              >
                 Home Decor
               </a>
             </div>
@@ -19,7 +22,10 @@ const LandingPageFooter = () => {
           </div>
           <div className=" w-1/2">
             <div className="px-60">
-              <a href="#" className="text-3xl font-bold text-decoration-none">
+              <a
+                href="#"
+                className="text-3xl font-semibold text-decoration-none"
+              >
                 Contact Us
               </a>
             </div>
@@ -32,7 +38,7 @@ const LandingPageFooter = () => {
         </div>
       </div>
       <div className="mb-2">
-        <p className="text-center text-xl">Developed by M V Hemanth</p>
+        <p className="text-center text-sm">Developed by M V Hemanth</p>
       </div>
     </>
   );
