@@ -20,13 +20,13 @@ const NavBarLandingPage = () => {
         <p className="text-4xl font-bold leading-[3rem]">
           A Place where you can find all your Home Decorations
         </p>
-        <a
-          href="#"
+        <Link
+          to="/account"
           className="bg-amber-300 rounded-md px-2 py-2 text-[18px] mt-3 text-decoration-none cursor-pointer"
         >
           Shop Now
           <i className="fa-solid fa-arrow-right text-[18px] px-2 py-1 ml-2 bg-white rounded-full"></i>
-        </a>
+        </Link>
       </div>
     </div>
   );

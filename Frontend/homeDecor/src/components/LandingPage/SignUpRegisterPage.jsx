@@ -2,7 +2,8 @@ import { Outlet, Link, useLocation } from "react-router";
 
 const SignUpRegisterPage = () => {
   const location = useLocation();
-  const isLogin = location.pathname.includes("login");
+  const isLogin =
+    location.pathname === "/account" || location.pathname.includes("login");
 
   return (
     <div className="flex h-screen w-full border-2 border-black justify-center items-center">
