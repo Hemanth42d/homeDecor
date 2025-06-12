@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const LinksBar = () => {
   return (
     <>
@@ -12,8 +14,7 @@ const LinksBar = () => {
             </a>
           </p>
           <p className="w-full flex justify-around items-center">
-            <a href="">Home</a>
-            <a href="">Shop</a>
+            <Link to="/shop">Shop</Link>
             <a href="">Categories</a>
             <a href="">Products</a>
             <a href="">Top Deals</a>

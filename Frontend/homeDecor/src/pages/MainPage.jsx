@@ -12,6 +12,7 @@ const MainPage = () => {
         "Home Furniture",
         "Game and Outdoor",
       ],
+      idx: 1,
     },
     {
       title: "Highlight",
@@ -22,6 +23,7 @@ const MainPage = () => {
         "Discounts",
         "Trending",
       ],
+      idx: 2,
     },
     {
       title: "Price Range",
@@ -32,10 +34,12 @@ const MainPage = () => {
         "$200 - $500",
         "Above $500",
       ],
+      idx: 3,
     },
     {
       title: "Average Rating",
       items: ["1 Star", "2 Stars", "3 Stars", "4 Stars", "5 Stars"],
+      idx: 4,
     },
   ];
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img from "../../assets/lamp.jpg";
 import rating from "../../assets/rating.png";
 
@@ -5,12 +6,12 @@ const ProductCard = () => {
   return (
     <>
       <div className="w-fit p-3">
-        <a href="">
+        <Link to="/shop/product/1">
           <img src={img} alt="image" className="h-50 w-60 rounded-md mb-3" />
-        </a>
-        <a href="" className="mt-5 font-semibold">
+        </Link>
+        <Link to="/shop/product/1" className="mt-5 font-semibold">
           Lamp for the ceiling of the house
-        </a>
+        </Link>
         <p className="flex justify-between items-center">
           <span>₹1500/-</span>
           <span>

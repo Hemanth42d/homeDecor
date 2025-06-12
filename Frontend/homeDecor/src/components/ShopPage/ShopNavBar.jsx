@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ShopNavBar = () => {
   return (
     <>
@@ -22,9 +24,9 @@ const ShopNavBar = () => {
         <div className="bg-black h-[70%] flex justify-around items-center w-full">
           <div className="w-1/4 flex justify-center items-center">
             <p>
-              <a href="#" className="text-white text-xl">
+              <Link to="/shop" className="text-white text-xl">
                 Home Decor
-              </a>
+              </Link>
             </p>
           </div>
           <div className="w-2/4 flex justify-center items-center relative">

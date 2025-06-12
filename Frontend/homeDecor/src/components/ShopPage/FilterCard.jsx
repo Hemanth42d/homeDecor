@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FilterCard = ({ title, Items }) => {
   return (
     <>
@@ -13,9 +15,9 @@ const FilterCard = ({ title, Items }) => {
         <div className="h-full flex flex-col justify-center items-start p-2 pl-5 gap-2">
           {Items.map((item, idx) => {
             return (
-              <a href="" key={idx}>
+              <Link to="/product/index" key={idx}>
                 {item}
-              </a>
+              </Link>
             );
           })}
         </div>
