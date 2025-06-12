@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -53,13 +54,9 @@ const Login = () => {
         <div className="w-[80%] text-center">
           <p>
             Not a member ?{" "}
-            <a
-              href="#"
-              onClick={() => setIsLogin(false)}
-              className="text-blue-500"
-            >
+            <Link to="/account/signup" className="text-blue-500">
               SignUp
-            </a>
+            </Link>
           </p>
         </div>
       </div>

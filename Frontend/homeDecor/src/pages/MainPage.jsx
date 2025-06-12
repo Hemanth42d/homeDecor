@@ -1,4 +1,5 @@
 import FilterCard from "../components/ShopPage/FilterCard";
+import ProductCard from "../components/ShopPage/ProductCard";
 
 const MainPage = () => {
   const data = [
@@ -45,8 +46,19 @@ const MainPage = () => {
           return <FilterCard key={idx} title={item.title} Items={item.items} />;
         })}
       </div>
-      <div className="w-3/4 h-full flex border-2 border-red-500">
-        <p>Showing 1-24 of 24 results</p>
+      <div className="w-3/4 h-full flex flex-col p-2 gap-3">
+        <div className="flex justify-between items-center w-full pr-20">
+          <p>Showing 1-24 of 24 results</p>
+          <p className="border-1 p-1 px-8 border-gray-800 rounded-md">
+            Default Sorting
+          </p>
+        </div>
+        <div className="p-5 flex flex-wrap justify-between items-center gap-5">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
       </div>
     </div>
   );

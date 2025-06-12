@@ -11,7 +11,7 @@ const NavBarLandingPage = () => {
           </a>
         </li>
         <li className="list-none pr-20">
-          <Link to="/register" className="text-2xl bg-amber-300 p-3 rounded-md">
+          <Link to="/account" className="text-2xl bg-amber-300 p-3 rounded-md">
             <i className="fa-solid fa-user"></i>
           </Link>
         </li>
