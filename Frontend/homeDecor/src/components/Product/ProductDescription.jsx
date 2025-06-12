@@ -37,44 +37,45 @@ const ProductDescription = () => {
         <button
           href="#"
           onClick={() => setActiveTab("Description")}
-          className={
-            activeTab === "Description"
-              ? "font-bold border-b-2 border-gray-700 cursor-pointer"
-              : ""
-          }
+          className={` cursor-pointer
+            ${
+              activeTab === "Description"
+                ? "font-bold border-b-2 border-gray-700 cursor-pointer"
+                : ""
+            }`}
         >
           Description
         </button>
         <button
           href="#"
           onClick={() => setActiveTab("Additional Information")}
-          className={
+          className={` cursor-pointer ${
             activeTab === "Additional Information"
               ? "font-bold border-b-2 border-gray-700 cursor-pointer"
               : ""
-          }
+          }`}
         >
           Additional Information
         </button>
         <button
           href="#"
           onClick={() => setActiveTab("Reviews")}
-          className={
+          className={` cursor-pointer ${
             activeTab === "Reviews"
               ? "font-bold border-b-2 border-gray-700 cursor-pointer"
               : ""
-          }
+          }`}
         >
           Reviews
         </button>
         <button
           href="#"
           onClick={() => setActiveTab("Shipping and return")}
-          className={
+          className={` cursor-pointer ${
             activeTab === "Shipping and return"
               ? "font-bold border-b-2 border-gray-700 cursor-pointer"
               : ""
-          }
+          }`}
         >
           Shipping and return
         </button>

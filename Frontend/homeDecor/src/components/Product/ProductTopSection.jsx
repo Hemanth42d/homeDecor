@@ -9,10 +9,10 @@ const ProductTopSection = () => {
             <div>
               <i className="fa-solid fa-angle-up text-center w-full text-sm cursor-pointer font-light"></i>
               <div className="h-full gap-2 flex flex-col w-31 p-2 cursor-pointer">
-                <img src={productImage} className="h-18" alt="" />
-                <img src={productImage} className="h-18" alt="" />
-                <img src={productImage} className="h-18" alt="" />
-                <img src={productImage} className="h-18" alt="" />
+                <img src={productImage} className="h-18 rounded-md" alt="" />
+                <img src={productImage} className="h-18 rounded-md" alt="" />
+                <img src={productImage} className="h-18 rounded-md" alt="" />
+                <img src={productImage} className="h-18 rounded-md" alt="" />
               </div>
               <i class="fa-solid fa-angle-down text-center w-full text-sm cursor-pointer font-light"></i>
             </div>
@@ -71,7 +71,7 @@ const ProductTopSection = () => {
                 <span>+</span>
               </p>
               <p className="bg-black w-full text-white text-center rounded-md text-[18px] p-1 cursor-pointer">
-                <Link>Add to card</Link>
+                <Link>Add to cart</Link>
               </p>
             </div>
             <p className="w-[65%] bg-black m-2 p-2 rounded-md text-white text-center text-[18px] cursor-pointer">
