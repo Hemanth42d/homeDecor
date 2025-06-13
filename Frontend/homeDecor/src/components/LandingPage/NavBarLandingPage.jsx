@@ -1,5 +1,7 @@
 import "../../App.css";
 import { Link } from "react-router-dom";
+import { FaUser } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 const NavBarLandingPage = () => {
   return (
@@ -11,8 +13,8 @@ const NavBarLandingPage = () => {
           </a>
         </li>
         <li className="list-none pr-20">
-          <Link to="/account" className="text-2xl bg-amber-300 p-3 rounded-md">
-            <i className="fa-solid fa-user"></i>
+          <Link to="/account">
+            <FaUser className="bg-amber-300 text-5xl p-2 rounded-md" />
           </Link>
         </li>
       </div>
@@ -22,10 +24,10 @@ const NavBarLandingPage = () => {
         </p>
         <Link
           to="/account"
-          className="bg-amber-300 rounded-md px-2 py-2 text-[18px] mt-3 text-decoration-none cursor-pointer"
+          className="bg-amber-300 rounded-md px-2 py-2 text-[18px] mt-3 text-decoration-none cursor-pointer flex justify-center items-center gap-2"
         >
           Shop Now
-          <i className="fa-solid fa-arrow-right text-[18px] px-2 py-1 ml-2 bg-white rounded-full"></i>
+          <FaArrowRight className="bg-white p-1 text-3xl rounded-xl" />
         </Link>
       </div>
     </div>

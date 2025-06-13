@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const Button = () => {
   return (
     <div>
       <Link
         to="/account"
-        className="text-decoration-none bg-[#007CBE] rounded-md p-2 text-white text-[17px]"
+        className="text-decoration-none bg-[#007CBE] rounded-md p-2 text-white text-[17px] flex justify-center items-center gap-2"
       >
         Shop
-        <i className="fa-solid fa-arrow-right text-[18px] px-2 py-1 ml-2 bg-white rounded-full text-black"></i>
+        <FaArrowRight className="" />
       </Link>
     </div>
   );

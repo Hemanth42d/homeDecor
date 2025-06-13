@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import { IoSearch } from "react-icons/io5";
+import { FaUser } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
 
 const ShopNavBar = () => {
   return (
@@ -35,12 +39,12 @@ const ShopNavBar = () => {
               placeholder="All categories"
               className="border-2 border-white pl-5 text-black bg-white w-[80%] p-1 rounded-md relative"
             />
-            <i className="fa-solid fa-magnifying-glass text-black absolute text-2xl right-23 top-2"></i>
+            <IoSearch className="text-black absolute text-2xl right-23 top-2" />
           </div>
           <div className="w-1/4 flex justify-around items-center">
             <p className="text-white text-sm flex justify-center items-center">
               <a href="">
-                <i className="fa-solid fa-user text-white text-2xl"></i>
+                <FaUser className="text-white text-2xl" />
               </a>
               <span className="ml-2 flex flex-col">
                 <span className="text-[11px]">Your</span>
@@ -49,7 +53,7 @@ const ShopNavBar = () => {
             </p>
             <p className="text-white text-sm flex justify-center items-center">
               <a href="">
-                <i className="fa-regular fa-heart text-2xl"></i>
+                <FaRegHeart className="text-2xl" />
               </a>
               <span className="ml-2 flex flex-col">
                 <span className="text-[11px]">2</span>
@@ -57,7 +61,7 @@ const ShopNavBar = () => {
             </p>
             <p className="text-white text-sm flex justify-center items-center">
               <a href="">
-                <i className="fa-solid fa-cart-shopping text-white text-2xl"></i>
+                <FaCartShopping className="text-white text-2xl" />
               </a>
               <span className="ml-2 flex flex-col">
                 <span className="text-[11px]">My</span>

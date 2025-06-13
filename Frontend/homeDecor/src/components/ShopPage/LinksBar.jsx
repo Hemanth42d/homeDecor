@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import { RiDiscountPercentFill } from "react-icons/ri";
 
 const LinksBar = () => {
   return (
     <>
       <div className="h-15 flex flex-col justify-start items-center border-b-1 bg-zinc-100">
         <div className="h-full w-full flex justify-around items-center">
-          <p className="w-full flex justify-center items-center">
-            <a href="">
+          <p className="w-full flex justify-center items-center ">
+            <a href="" className="flex justify-center items-center gap-2">
               <span>
-                <i className="fa-solid fa-bars text-black text-sm mr-2"></i>
+                <FaBars />
               </span>
               <span>Shop By Categories</span>
             </a>
@@ -20,9 +22,9 @@ const LinksBar = () => {
             <a href="">Top Deals</a>
           </p>
           <p className="w-full flex justify-center items-center">
-            <a href="">
+            <a href="" className="flex justify-center items-center gap-1">
               <span className="h-full">
-                <i className="fa-solid fa-tags mr-1"></i>
+                <RiDiscountPercentFill />
               </span>
               <span> Today Deals</span>
             </a>

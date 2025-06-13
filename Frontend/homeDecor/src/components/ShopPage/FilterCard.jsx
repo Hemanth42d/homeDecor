@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaWindowMinimize } from "react-icons/fa6";
 
 const FilterCard = ({ title, Items }) => {
   return (
@@ -8,7 +9,7 @@ const FilterCard = ({ title, Items }) => {
           <h1 className="text-md font-bold pl-5">{title}</h1>
           <span className=" flex justify-center items-center">
             <a href="" className="pb-2 pr-3">
-              <i className="fa-solid fa-window-minimize"></i>
+              <FaWindowMinimize />
             </a>
           </span>
         </div>

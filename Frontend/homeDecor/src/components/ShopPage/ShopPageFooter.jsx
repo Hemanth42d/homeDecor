@@ -1,3 +1,12 @@
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaCopyright } from "react-icons/fa";
+import { FaCreditCard } from "react-icons/fa6";
+
 const ShopPageFooter = () => {
   return (
     <>
@@ -31,21 +40,21 @@ const ShopPageFooter = () => {
           <div className="h-[50%] w-[30%] flex flex-col justify-start gap-3 items-start pl-10">
             <p className="text-white text-2xl ">About Information</p>
             <p className="text-white text-sm flex flex-col gap-2">
-              <a href="">
+              <a href="" className="flex justify-center items-center gap-1">
                 <span className="mr-3">
-                  <i className="fa-solid fa-location-dot"></i>
+                  <FaLocationDot />
                 </span>
                 <span>Near 7-roads, 516002 Kadapa, AndhraPradesh.</span>
               </a>
-              <a href="">
+              <a href="" className="flex">
                 <span className="mr-3">
-                  <i className="fa-solid fa-phone"></i>
+                  <FaPhone />
                 </span>
                 <span>+91 1234567890</span>
               </a>
-              <a href="">
+              <a href="" className="flex">
                 <span className="mr-3">
-                  <i className="fa-solid fa-envelope"></i>
+                  <MdEmail className="text-xl" />
                 </span>
                 <span>homedecor@gmail.com</span>
               </a>
@@ -56,28 +65,28 @@ const ShopPageFooter = () => {
           <div className="h-full w-[30%] flex justify-around items-center text-white">
             <div className="flex gap-10">
               <a href="">
-                <i className="fa-brands fa-instagram"></i>
+                <FaInstagram className="text-xl" />
               </a>
               <a href="">
-                <i className="fa-brands fa-x-twitter"></i>
+                <FaXTwitter className="text-xl" />
               </a>
               <a href="">
-                <i className="fa-brands fa-facebook"></i>
+                <FaFacebook className="text-xl" />
               </a>
             </div>
           </div>
           <div className="h-full w-[30%] flex justify-center items-center text-white">
-            <p>
+            <p className="flex justify-center items-center">
               <span className="mr-4">
-                <i className="fa-solid fa-copyright"></i>
+                <FaCopyright />
               </span>
               <span>All rights reserved to M.V.Hemanth</span>
             </p>
           </div>
           <div className="h-full w-[30%] flex justify-center items-center text-white">
-            <p>
+            <p className="flex justify-center items-center">
               <span className="mr-2">
-                <i className="fa-solid fa-credit-card"></i>
+                <FaCreditCard />
               </span>
               <span>All cards accepted for payments</span>
             </p>
