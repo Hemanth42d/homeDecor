@@ -7,6 +7,13 @@ import Login from "./components/LandingPage/Login";
 import Signup from "./components/LandingPage/Signup";
 import ProductDetails from "./components/ShopPage/ProductDetails";
 import MainPage from "./pages/MainPage";
+import AccountDetails from "./components/ShopPage/AccountDetails";
+import Cart from "./components/ShopPage/Cart";
+import AboutUs from "./components/ShopPage/AboutUs";
+import ContactUs from "./components/ShopPage/ContactUs";
+import Whishlist from "./components/ShopPage/Whishlist";
+import Faqs from "./components/ShopPage/Faqs";
+import MyOrders from "./components/ShopPage/MyOrders";
 
 function App() {
   return (
@@ -21,6 +28,13 @@ function App() {
         <Route path="/shop" element={<ShopPage />}>
           <Route index element={<MainPage />} />
           <Route path="product/:id" element={<ProductDetails />} />
+          <Route path="account" element={<AccountDetails />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="aboutus" element={<AboutUs />} />
+          <Route path="contactus" element={<ContactUs />} />
+          <Route path="whishlist" element={<Whishlist />} />
+          <Route path="faqs" element={<Faqs />} />
+          <Route path="myorders" element={<MyOrders />} />
         </Route>
       </Routes>
     </>

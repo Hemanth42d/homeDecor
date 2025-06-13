@@ -10,7 +10,7 @@ import { FaCreditCard } from "react-icons/fa6";
 const ShopPageFooter = () => {
   return (
     <>
-      <div className="h-100 flex flex-col gap-1 bg-gray-900 mt-10">
+      <div className="h-100 flex flex-col gap-1 bg-gray-900 mt-10 bottom-0 ">
         <div className="h-80 flex justify-around gap-3 items-center">
           <div className="h-[50%]  flex flex-col w-[30%] justify-start gap-3 items-center">
             <p>

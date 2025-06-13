@@ -14,15 +14,15 @@ const ShopNavBar = () => {
             Order
           </p>
           <p className="flex gap-4 w-1/2 justify-around items-center">
-            <a href="" className="text-white text-sm">
+            <Link to="/shop/aboutus" className="text-white text-sm">
               About Us
-            </a>
-            <a href="" className="text-white text-sm">
+            </Link>
+            <Link to="/shop/contactus" className="text-white text-sm">
               Contact Us
-            </a>
-            <a href="" className="text-white text-sm">
+            </Link>
+            <Link to="/shop/faqs" className="text-white text-sm">
               FAQs
-            </a>
+            </Link>
           </p>
         </div>
         <div className="bg-black h-[70%] flex justify-around items-center w-full">
@@ -43,26 +43,26 @@ const ShopNavBar = () => {
           </div>
           <div className="w-1/4 flex justify-around items-center">
             <p className="text-white text-sm flex justify-center items-center">
-              <a href="">
+              <Link to="/shop/account">
                 <FaUser className="text-white text-2xl" />
-              </a>
+              </Link>
               <span className="ml-2 flex flex-col">
                 <span className="text-[11px]">Your</span>
                 <span className="text-[11px]">Account</span>
               </span>
             </p>
             <p className="text-white text-sm flex justify-center items-center">
-              <a href="">
+              <Link to="/shop/whishlist">
                 <FaRegHeart className="text-2xl" />
-              </a>
+              </Link>
               <span className="ml-2 flex flex-col">
                 <span className="text-[11px]">2</span>
               </span>
             </p>
             <p className="text-white text-sm flex justify-center items-center">
-              <a href="">
+              <Link to="/shop/cart">
                 <FaCartShopping className="text-white text-2xl" />
-              </a>
+              </Link>
               <span className="ml-2 flex flex-col">
                 <span className="text-[11px]">My</span>
                 <span className="text-[11px]">Cart</span>
