@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaCopyright } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const ShopPageFooter = () => {
   return (
@@ -26,32 +27,30 @@ const ShopPageFooter = () => {
           </div>
           <div className="h-[50%] w-[30%] flex flex-col justify-start gap-3 items-start pl-10">
             <p>
-              <a href="" className="text-white text-2xl">
-                Quick links
-              </a>
+              <p className="text-white text-2xl">Quick links</p>
             </p>
             <p className="text-white flex flex-col gap-1 text-sm">
-              <a href="">New Products</a>
-              <a href="">Best Sales</a>
-              <a href="">Contact Us</a>
-              <a href="">Stores</a>
+              <Link to="/shop">New Products</Link>
+              <Link to="/shop/topdeals">Best Sales</Link>
+              <Link to="/shop/contactus">Contact Us</Link>
+              <Link to="/shop">Stores</Link>
             </p>
           </div>
           <div className="h-[50%] w-[30%] flex flex-col justify-start gap-3 items-start pl-10">
             <p className="text-white text-2xl ">About Information</p>
             <p className="text-white text-sm flex flex-col gap-2">
-              <a href="" className="flex justify-center items-center gap-1">
+              <p className="flex justify-center items-center gap-1">
                 <span className="mr-3">
                   <FaLocationDot />
                 </span>
                 <span>Near 7-roads, 516002 Kadapa, AndhraPradesh.</span>
-              </a>
-              <a href="" className="flex">
+              </p>
+              <p className="flex">
                 <span className="mr-3">
                   <FaPhone />
                 </span>
                 <span>+91 1234567890</span>
-              </a>
+              </p>
               <a href="" className="flex">
                 <span className="mr-3">
                   <MdEmail className="text-xl" />
@@ -64,15 +63,15 @@ const ShopPageFooter = () => {
         <div className="border-t-1 border-gray-700 h-10 flex justify-around items-center">
           <div className="h-full w-[30%] flex justify-around items-center text-white">
             <div className="flex gap-10">
-              <a href="">
+              <Link to="">
                 <FaInstagram className="text-xl" />
-              </a>
-              <a href="">
+              </Link>
+              <Link to="">
                 <FaXTwitter className="text-xl" />
-              </a>
-              <a href="">
+              </Link>
+              <Link to="">
                 <FaFacebook className="text-xl" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="h-full w-[30%] flex justify-center items-center text-white">

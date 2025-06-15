@@ -4,7 +4,13 @@ import profileImg from "../../assets/meeee.jpg";
 const AccountDetails = () => {
   return (
     <>
-      <div className="flex w-[80%] m-auto h-full mt-5">
+      <div className="flex w-[80%] m-auto h-full mt-5 relative">
+        <Link
+          to="/shop"
+          className="bg-blue-500 p-2 text-white rounded-md absolute right-0 top-[-0.5rem]  hover:bg-blue-600 transition-colors"
+        >
+          Go Back
+        </Link>
         <div className="w-1/4 h-full flex flex-col justify-center items-center p-3">
           <img
             src={profileImg}
@@ -17,19 +23,19 @@ const AccountDetails = () => {
           <div className="w-[80%] grid grid-cols-2 grid-rows-2 gap-4 mt-2 mb-7 border-b-1 border-gray-800 py-3">
             <Link
               to="/shop/cart"
-              className="bg-amber-400 p-2 w-40 text-center rounded-md text-[17px] "
+              className="bg-amber-300 p-2 w-40 text-center rounded-md text-[17px] hover:bg-amber-400 transition-colors"
             >
               Cart
             </Link>
             <Link
               to="/shop/whishlist"
-              className="bg-amber-400 p-2 w-40 text-center rounded-md text-[17px] "
+              className="bg-amber-300 p-2 w-40 text-center rounded-md text-[17px] hover:bg-amber-400 transition-colors"
             >
               Whishlist
             </Link>
             <Link
               to="/shop/myorders"
-              className="bg-amber-400 p-2 w-40 text-center rounded-md text-[17px] "
+              className="bg-amber-300 p-2 w-40 text-center rounded-md text-[17px] hover:bg-amber-400 transition-colors"
             >
               My Oders
             </Link>
@@ -102,7 +108,7 @@ const AccountDetails = () => {
                 />
               </span>
             </label>
-            <button className="rounded-md w-[50%] border-2 m-auto p-2 text-xl bg-blue-500 text-white cursor-pointer">
+            <button className="rounded-md w-[50%] border-2 m-auto p-2 text-xl bg-blue-500 text-white cursor-pointer hover:bg-blue-600 transition-colors">
               Update Details
             </button>
           </form>

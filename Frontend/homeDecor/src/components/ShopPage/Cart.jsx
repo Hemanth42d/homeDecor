@@ -1,5 +1,31 @@
+import { Link } from "react-router";
+import CartProduct from "./CartProduct";
+
 const Cart = () => {
-  return <div>Cart</div>;
+  return (
+    <>
+      <div className="w-[80%] m-auto h-full flex flex-col p-4 relative">
+        <Link
+          to="/shop"
+          className="bg-blue-500 p-2 text-white rounded-md absolute right-5 top-3  hover:bg-blue-600 transition-colors"
+        >
+          Go Back
+        </Link>
+        <div className="mb-5">
+          <p className="text-2xl font-bold">Cart</p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <CartProduct />
+          <CartProduct />
+        </div>
+        <div className="m-2 text-right p-2">
+          <button className="bg-blue-500 text-white p-3 rounded-md cursor-pointer">
+            Buy Cart Items
+          </button>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Cart;

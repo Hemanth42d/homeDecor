@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import LinksBar from "../components/ShopPage/LinksBAr";
 import ShopNavBar from "../components/ShopPage/ShopNavBar";
 import ShopPageFooter from "../components/ShopPage/ShopPageFooter";
+import ProductFooter from "../components/Product/ProductFooter";
+import ScrollToTop from "../components/ShopPage/ScrollToTop";
 
 const ShopPage = () => {
   return (
@@ -9,6 +11,8 @@ const ShopPage = () => {
       <ShopNavBar />
       <LinksBar />
       <Outlet />
+      <ScrollToTop />
+      <ProductFooter />
       <ShopPageFooter />
     </div>
   );

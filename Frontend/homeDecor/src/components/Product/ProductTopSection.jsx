@@ -70,11 +70,11 @@ const ProductTopSection = () => {
                 <span>1</span>
                 <span>+</span>
               </p>
-              <p className="bg-black w-full text-white text-center rounded-md text-[18px] p-1 cursor-pointer">
+              <p className="bg-gray-900 hover:bg-black transition-colors w-full text-white text-center rounded-md text-[18px] p-1 cursor-pointer">
                 <Link>Add to cart</Link>
               </p>
             </div>
-            <p className="w-[65%] bg-black m-2 p-2 rounded-md text-white text-center text-[18px] cursor-pointer">
+            <p className="w-[65%] bg-gray-900 hover:bg-black transition-colors m-2 p-2 rounded-md text-white text-center text-[18px] cursor-pointer">
               Buy Now
             </p>
           </div>

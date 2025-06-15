@@ -1,9 +1,16 @@
+import { Link } from "react-router";
 import MyMap from "./MyMap";
 
 const ContactUs = () => {
   return (
     <>
-      <div className="w-[80%] m-auto p-3 flex gap-4">
+      <div className="w-[80%] m-auto p-3 flex gap-4 relative">
+        <Link
+          to="/shop"
+          className="bg-blue-500 p-2 text-white rounded-md absolute right-4 top-4  hover:bg-blue-600 transition-colors"
+        >
+          Go Back
+        </Link>
         <div className="w-1/2 h-full p-4">
           <MyMap />
         </div>

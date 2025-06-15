@@ -14,6 +14,7 @@ import ContactUs from "./components/ShopPage/ContactUs";
 import Whishlist from "./components/ShopPage/Whishlist";
 import Faqs from "./components/ShopPage/Faqs";
 import MyOrders from "./components/ShopPage/MyOrders";
+import TopDeals from "./components/ShopPage/TopDeals";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="whishlist" element={<Whishlist />} />
           <Route path="faqs" element={<Faqs />} />
           <Route path="myorders" element={<MyOrders />} />
+          <Route path="topdeals" element={<TopDeals />} />
         </Route>
       </Routes>
     </>

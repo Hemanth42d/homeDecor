@@ -9,7 +9,6 @@ const ProductDetails = () => {
       <ProductTopSection />
       <ProductDescription />
       <RelatedProducts />
-      <ProductFooter />
     </>
   );
 };

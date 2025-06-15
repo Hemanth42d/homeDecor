@@ -57,7 +57,9 @@ const MainPage = () => {
             Default Sorting
           </p>
         </div>
-        <div className="p-5 flex flex-wrap justify-between items-center gap-5">
+        <div className="p-2 grid grid-cols-4 h-full">
+          <ProductCard />
+          <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
