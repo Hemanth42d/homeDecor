@@ -15,6 +15,13 @@ import Whishlist from "./components/ShopPage/Whishlist";
 import Faqs from "./components/ShopPage/Faqs";
 import MyOrders from "./components/ShopPage/MyOrders";
 import TopDeals from "./components/ShopPage/TopDeals";
+import OwnerPage from "./pages/OwnerPage";
+import OwnerTopBar from "./components/OwnerComponents/OwnerTopBar";
+import OwnerSettings from "./components/OwnerComponents/OwnerSettings";
+import OwnerSideBar from "./components/OwnerComponents/OwnerSideBar";
+import OwnerDashboard from "./components/OwnerComponents/OwnerDashboard";
+import OwnerAddProduct from "./components/OwnerComponents/OwnerAddProduct";
+import OwnerOrders from "./components/OwnerComponents/OwnerOrders";
 
 function App() {
   return (
@@ -37,6 +44,12 @@ function App() {
           <Route path="faqs" element={<Faqs />} />
           <Route path="myorders" element={<MyOrders />} />
           <Route path="topdeals" element={<TopDeals />} />
+        </Route>
+        <Route path="/owner" element={<OwnerPage />}>
+          <Route index element={<OwnerDashboard />} />
+          <Route path="addproduct" element={<OwnerAddProduct />} />
+          <Route path="orders" element={<OwnerOrders />} />
+          <Route path="settings" element={<OwnerSettings />} />
         </Route>
       </Routes>
     </>
