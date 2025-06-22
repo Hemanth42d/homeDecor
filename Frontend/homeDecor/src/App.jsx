@@ -22,6 +22,7 @@ import OwnerSideBar from "./components/OwnerComponents/OwnerSideBar";
 import OwnerDashboard from "./components/OwnerComponents/OwnerDashboard";
 import OwnerAddProduct from "./components/OwnerComponents/OwnerAddProduct";
 import OwnerOrders from "./components/OwnerComponents/OwnerOrders";
+import PaymentsPage from "./components/ShopPage/PaymentsPage";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="faqs" element={<Faqs />} />
           <Route path="myorders" element={<MyOrders />} />
           <Route path="topdeals" element={<TopDeals />} />
+          <Route path="product/:id/payment" element={<PaymentsPage />} />
         </Route>
         <Route path="/owner" element={<OwnerPage />}>
           <Route index element={<OwnerDashboard />} />

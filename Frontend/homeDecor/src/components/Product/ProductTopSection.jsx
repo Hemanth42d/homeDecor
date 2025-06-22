@@ -1,6 +1,8 @@
 import productImage from "../../assets/lamp.jpg";
 import { Link } from "react-router-dom";
 const ProductTopSection = () => {
+  const handleOnBuyNowClick = () => {};
+
   return (
     <>
       <div className="w-full">
@@ -14,7 +16,7 @@ const ProductTopSection = () => {
                 <img src={productImage} className="h-18 rounded-md" alt="" />
                 <img src={productImage} className="h-18 rounded-md" alt="" />
               </div>
-              <i class="fa-solid fa-angle-down text-center w-full text-sm cursor-pointer font-light"></i>
+              <i className="fa-solid fa-angle-down text-center w-full text-sm cursor-pointer font-light"></i>
             </div>
             <div className="w-3/4">
               <div>
@@ -28,7 +30,7 @@ const ProductTopSection = () => {
           </div>
           <div className="flex flex-col justify-center items-start ml-10 w-1/2 h-full">
             <p className="mb-2 text-sm">
-              <span className="font-bold">Brand</span> : Phillips
+              <span className="font-bold">Brand</span> <span>: Phillips</span>
             </p>
             <p className="text-4xl mb-2 ">Modern Lamp for the Houses</p>
             <p className="flex justify-between w-full p-2">
@@ -46,8 +48,8 @@ const ProductTopSection = () => {
               durable metal with a clean glass shade, it provides ample ambient
               lighting without being overbearing
             </p>
-            <p className="p-2 h-full gap-1">
-              <div className="text-sm font-semibold mb-3">Dimensions :</div>
+            <span className="p-2 h-full gap-1">
+              <span className="text-sm font-semibold mb-3">Dimensions :</span>
               <span className="mt-2 flex gap-3">
                 <span className="border-1 border-gray-600 p-1 px-2 rounded-md">
                   100 x 130 cm
@@ -56,27 +58,31 @@ const ProductTopSection = () => {
                   40 x 20 cm
                 </span>
               </span>
-            </p>
-            <p className="w-full p-1 flex gap-5 h-full items-center">
+            </span>
+            <span className="w-full p-1 flex gap-5 h-full items-center">
               <span className="font-semibold text-sm pl-2">28 in stock</span>
               <span className="pl-5 text-center p-1 cursor-pointer">
                 <i className="fa-regular fa-heart text-xl"></i>
                 <span className="text-sm font-light">Add to whishlist</span>
               </span>
-            </p>
+            </span>
             <div className="flex justify-around gap-3 w-[65%]">
               <p className="flex border-1 border-gray-600 justify-center items-center gap-4 rounded-md m-1 px-2 cursor-pointer">
                 <span>-</span>
                 <span>1</span>
                 <span>+</span>
               </p>
-              <p className="bg-gray-900 hover:bg-black transition-colors w-full text-white text-center rounded-md text-[18px] p-1 cursor-pointer">
+              <button className="bg-gray-800 hover:bg-black transition-colors w-full text-white text-center rounded-md text-[18px] p-1 cursor-pointer">
                 <Link>Add to cart</Link>
-              </p>
+              </button>
             </div>
-            <p className="w-[65%] bg-gray-900 hover:bg-black transition-colors m-2 p-2 rounded-md text-white text-center text-[18px] cursor-pointer">
+            <Link
+              to={`/shop/product/${1}/payment`}
+              onClick={() => handleOnBuyNowClick()}
+              className="w-[65%] bg-gray-800 hover:bg-black transition-colors m-2 p-2 rounded-md text-white text-center text-[18px] cursor-pointer"
+            >
               Buy Now
-            </p>
+            </Link>
           </div>
         </div>
       </div>

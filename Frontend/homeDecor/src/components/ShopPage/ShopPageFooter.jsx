@@ -26,9 +26,9 @@ const ShopPageFooter = () => {
             </p>
           </div>
           <div className="h-[50%] w-[30%] flex flex-col justify-start gap-3 items-start pl-10">
-            <p>
+            <span>
               <p className="text-white text-2xl">Quick links</p>
-            </p>
+            </span>
             <p className="text-white flex flex-col gap-1 text-sm">
               <Link to="/shop">New Products</Link>
               <Link to="/shop/topdeals">Best Sales</Link>
@@ -39,18 +39,18 @@ const ShopPageFooter = () => {
           <div className="h-[50%] w-[30%] flex flex-col justify-start gap-3 items-start pl-10">
             <p className="text-white text-2xl ">About Information</p>
             <p className="text-white text-sm flex flex-col gap-2">
-              <p className="flex justify-center items-center gap-1">
+              <span className="flex justify-center items-center gap-1">
                 <span className="mr-3">
                   <FaLocationDot />
                 </span>
                 <span>Near 7-roads, 516002 Kadapa, AndhraPradesh.</span>
-              </p>
-              <p className="flex">
+              </span>
+              <span className="flex">
                 <span className="mr-3">
                   <FaPhone />
                 </span>
                 <span>+91 1234567890</span>
-              </p>
+              </span>
               <a href="" className="flex">
                 <span className="mr-3">
                   <MdEmail className="text-xl" />
