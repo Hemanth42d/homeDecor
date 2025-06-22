@@ -4,11 +4,11 @@ import OwnerTopBar from "../components/OwnerComponents/OwnerTopBar";
 
 const OwnerPage = () => {
   return (
-    <div className="flex">
+    <div className="flex bg-gray-300 h-full">
       <OwnerSideBar />
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col h-full sticky">
         <OwnerTopBar />
-        <div className="p-4">
+        <div className="p-5 w-[90%] ml-10 h-full m-auto mt-5 mb-2 rounded-md bg-gray-200 shadow-md">
           <Outlet />
         </div>
       </div>
