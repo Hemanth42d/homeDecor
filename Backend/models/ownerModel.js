@@ -11,58 +11,34 @@ const addressSchema = mongoose.Schema({
   isDefault: { type: Boolean },
 });
 
-const userSchema = mongoose.Schema({
+const ownerSchema = mongoose.Schema({
   userName: {
     type: String,
     required: true,
-    unquie: true,
-    trim: true,
-    minlength: 3,
   },
   email: {
     type: String,
-    unquie: true,
-    lowercase: true,
+    required: true,
   },
   password: {
     type: String,
-    required: true,
   },
-  phoneNumber: {
+  phone: {
     type: Number,
   },
+  address: [addressSchema],
   profilePhoto: {
     type: String,
-    // default :
   },
-  address: [addressSchema],
-  whishlist: [
+  bio: {
+    type: String,
+  },
+  products: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "product",
     },
   ],
-  cart: [
-    {
-      product: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "product",
-      },
-      quantity: {
-        type: Number,
-      },
-    },
-  ],
-  orders: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Order",
-    },
-  ],
-  isAdmin: {
-    type: Boolean,
-    default: false,
-  },
 });
 
-module.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model("owner", ownerSchema);
